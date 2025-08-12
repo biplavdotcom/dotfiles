@@ -1,0 +1,5 @@
+2025-07-26 13:05:02 - [swaybg-1.2.1/main.c:282] Found config * for output eDP-1 (LG Display 0x03FC )
+2025-07-26 13:05:02 - [swaybg-1.2.1/background-image.c:30] Failed to load background image (Failed to open file “”: No such file or directory).
+2025-07-26 13:05:02 - [swaybg-1.2.1/main.c:610] Failed to load image: 
+2025-07-26 13:05:02 - [swaybg-1.2.1/background-image.c:30] Failed to load background image (Failed to open file “”: No such file or directory).
+2025-07-26 13:05:02 - [swaybg-1.2.1/main.c:610] Failed to load image: 
