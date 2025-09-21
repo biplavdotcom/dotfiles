@@ -21,3 +21,10 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
+
+-- spam to indent
+vim.keymap.set("v", "<", "<gv", opts) 
+vim.keymap.set("v", ">", ">gv", opts) 
+
+-- clears the search highlight on ctrl+c
+vim.keymap.set("n", "<C-c>", ":nohl<CR>", {desc = "Clear serach highlights on ctrl+c", silent = true})

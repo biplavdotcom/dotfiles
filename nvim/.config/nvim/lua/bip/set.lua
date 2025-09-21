@@ -1,4 +1,4 @@
-vim.opt.clipboard:append("unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.tabstop = 4         -- A tab is displayed as 4 spaces
 vim.opt.shiftwidth = 4      -- Indentation uses 4 spaces
@@ -23,7 +23,7 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
-vim.opt.hlsearch = false
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
@@ -31,3 +31,4 @@ vim.opt.signcolumn = "yes"
 
 vim.opt.colorcolumn = "80"
 
+vim.opt.updatetime = 50
