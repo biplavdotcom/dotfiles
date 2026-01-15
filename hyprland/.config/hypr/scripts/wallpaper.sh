@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER="$HOME/Downloads/idk.jpg"
+WALLPAPER="$HOME/Pictures/wallpapers/491593.jpg"
 
 pkill -f swaybg
 
