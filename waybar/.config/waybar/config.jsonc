@@ -29,6 +29,7 @@
         //"hyprland/language",
         "battery",
         "battery#bat2",
+        "bluetooth",
         "tray"
         //"clock",
         //"custom/power"
@@ -107,11 +108,18 @@
             "deactivated": ""
         }
     },
+    "bluetooth":{
+        "format": "",
+        "on-click": "blueman-manager",
+        "format-connected": " {device_alias}",
+        "format-disabled": "󰂲"
+
+    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10,
         // "icons": {
-        //   "blueman": "bluetooth",
+        //   "blueman-manager": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
     },
@@ -200,7 +208,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol",
+        "on-click": "pipemixer",
 
         "tooltip": true,
         "tooltip-format": "{desc}"
@@ -228,5 +236,5 @@
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
-    }
+    },
 }

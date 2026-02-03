@@ -87,6 +87,7 @@ button {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
+#bluetooth,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -321,6 +322,12 @@ window#waybar.empty #window {
     padding-left: 8px;
     padding-right: 12px;
 }
+
+#bluetooth{
+	color: #222831;
+	background-color: #DDDDDD;
+}
+
 
 
 #temperature{
