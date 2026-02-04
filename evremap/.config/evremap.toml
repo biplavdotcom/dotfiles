@@ -1,0 +1,21 @@
+device_name = "AT Translated Set 2 keyboard"
+
+# Right Shift → L
+[[remap]]
+input = ["KEY_RIGHTSHIFT"]
+output = ["KEY_L"]
+
+# Right Alt → O (fixed typo from earlier)
+[[remap]]
+input = ["KEY_RIGHTALT"]
+output = ["KEY_O"]
+
+# F9 → 9
+[[remap]]
+input = ["KEY_F9"]
+output = ["KEY_9"]
+
+[[dual_role]]
+input = "KEY_CAPSLOCK"
+hold = ["KEY_RIGHTCTRL"]
+tap = ["KEY_CAPSLOCK"]
