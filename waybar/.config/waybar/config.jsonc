@@ -19,7 +19,7 @@
         "mpd",
         //"idle_inhibitor",
         "pulseaudio",
-        //"network",
+        "network",
         //"power-profiles-daemon",
         //"cpu",
         //"memory",
@@ -182,14 +182,14 @@
         "power-saver": ""
       }
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+    "network": { // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "Connected to {essid}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+	"on-click": "alacritty -e nmtui"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -208,7 +208,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pipemixer",
+        // "on-click": "pipemixer",
+	"on-click": "pavucontrol",
 
         "tooltip": true,
         "tooltip-format": "{desc}"

@@ -328,6 +328,11 @@ window#waybar.empty #window {
 	background-color: #DDDDDD;
 }
 
+#network{
+	color: #222831;
+	background-color: #DDDDDD;
+	padding-right: 12px;
+}
 
 
 #temperature{
