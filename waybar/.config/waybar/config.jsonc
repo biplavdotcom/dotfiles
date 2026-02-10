@@ -7,9 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad",
+        "niri/workspaces",
+        "niri/mode",
+        "niri/scratchpad",
         "custom/media"
     ],
     "modules-center": [
@@ -195,7 +195,7 @@
         "format": "{icon} {volume}%",
         "scroll-step": 2.5, // %, can be a float
         "format-bluetooth": "󰂯 {volume}%",
-        "format-bluetooth-muted": "",
+        // "format-bluetooth-muted": "",
         "format-muted": "",
         "format-source": "{volume}% ",
         "format-source-muted": "",
@@ -208,8 +208,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        // "on-click": "pipemixer",
-	"on-click": "pavucontrol",
+        "on-click": "pwvucontrol",
+	// "on-click": "pavucontrol",
 
         "tooltip": true,
         "tooltip-format": "{desc}"
