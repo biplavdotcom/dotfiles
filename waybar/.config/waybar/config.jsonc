@@ -7,9 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "niri/workspaces",
-        "niri/mode",
-        "niri/scratchpad",
+        "hyprland/workspaces",
+        "hyprland/mode",
+        "hyprland/scratchpad",
         "custom/media"
     ],
     "modules-center": [
