@@ -7,9 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad",
+        "dwl/workspaces",
+        "dwl/mode",
+        "dwl/scratchpad",
         "custom/media"
     ],
     "modules-center": [
@@ -26,7 +26,7 @@
         "temperature",
         //"backlight",
         //"keyboard-state",
-        //"hyprland/language",
+        //"dwl/language",
         "battery",
         "battery#bat2",
         "bluetooth",
@@ -35,7 +35,7 @@
         //"custom/power"
     ],
     // Modules configuration
-    "hyprland/workspaces": {
+    "dwl/workspaces": {
          "disable-scroll": false,
          "all-outputs": true,
     //     "warp-on-scroll": false,
@@ -53,7 +53,7 @@
         "on-scroll-down": "hyprctl dispatch workspace m+1",
         "on-scroll-up": "hyprctl dispatch workspace m-1",
     },
-    "hyprland/window":{
+    "dwl/window":{
 	    "format": "{class}"
     },
     "keyboard-state": {
@@ -65,10 +65,10 @@
             "unlocked": ""
         }
     },
-    "hyprland/mode": {
+    "dwl/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "hyprland/scratchpad": {
+    "dwl/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": ["", ""],
