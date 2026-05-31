@@ -7,9 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "dwl/workspaces",
-        "dwl/mode",
-        "dwl/scratchpad",
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad",
         "custom/media"
     ],
     "modules-center": [
@@ -26,7 +26,8 @@
         "temperature",
         //"backlight",
         //"keyboard-state",
-        //"dwl/language",
+        //"sway/language",
+	"custom/night",
         "battery",
         "battery#bat2",
         "bluetooth",
@@ -35,7 +36,7 @@
         //"custom/power"
     ],
     // Modules configuration
-    "dwl/workspaces": {
+    "sway/workspaces": {
          "disable-scroll": false,
          "all-outputs": true,
     //     "warp-on-scroll": false,
@@ -53,7 +54,7 @@
         "on-scroll-down": "hyprctl dispatch workspace m+1",
         "on-scroll-up": "hyprctl dispatch workspace m-1",
     },
-    "dwl/window":{
+    "sway/window":{
 	    "format": "{class}"
     },
     "keyboard-state": {
@@ -65,10 +66,10 @@
             "unlocked": ""
         }
     },
-    "dwl/mode": {
+    "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "dwl/scratchpad": {
+    "sway/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": ["", ""],
@@ -238,4 +239,9 @@
 			"hibernate": "systemctl hibernate"
 		}
     },
+    "custom/night":{
+	"exec": "~/.config/waybar/scripts/gammastep_status.sh",
+	"interval": 2,
+	"on-click": "~/.config/waybar/scripts/gammastep.sh"
+    }
 }
