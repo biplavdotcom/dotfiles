@@ -1,22 +1,22 @@
-vim.pack.add{
+vim.pack.add {
     -- Dependencies
     { src = 'https://github.com/nvim-lua/plenary.nvim' },
     { src = "https://github.com/MunifTanjim/nui.nvim" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
 
-    { src = 'https://github.com/nvim-telescope/telescope.nvim', name = 'telescope' },
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter", name = 'treesitter'},
-    { src = "https://github.com/ThePrimeagen/harpoon", version = "harpoon2", name = 'primagen/harpoon2' },
-    { src = "https://github.com/tpope/vim-fugitive", name = 'fugitive'},
-    { src = "https://github.com/mbbill/undotree", name = 'undotree' },
-    { src = "https://github.com/nvim-lualine/lualine.nvim", name = 'lualine'},
-    { src = "https://github.com/rebelot/kanagawa.nvim", name = 'kanagawa theme'},
+    { src = 'https://github.com/nvim-telescope/telescope.nvim',   name = 'telescope' },
+    { src = "https://github.com/ThePrimeagen/harpoon",            version = "harpoon2",   name = 'primagen/harpoon2' },
+    { src = "https://github.com/tpope/vim-fugitive",              name = 'fugitive' },
+    { src = "https://github.com/mbbill/undotree",                 name = 'undotree' },
+    { src = "https://github.com/nvim-lualine/lualine.nvim",       name = 'lualine' },
+    { src = "https://github.com/rebelot/kanagawa.nvim",           name = 'kanagawa theme' },
 
     -- MINI
     { src = "https://github.com/nvim-mini/mini.nvim" },
     { src = "https://github.com/rafamadriz/friendly-snippets" },
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" }
-    
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
+    { src = 'https://github.com/neovim/nvim-lspconfig' },
+    { src = 'https://github.com/mason-org/mason.nvim' },
 }
 
 -- vim.api.nvim_create_autocmd("VimEnter", {
@@ -27,7 +27,7 @@ vim.pack.add{
 
 
 -- Lualine
-require('lualine').setup{
+require('lualine').setup {
     options = { theme = 'everforest' }
 }
 
@@ -48,7 +48,7 @@ require("mini.cmdline").setup({
 })
 
 -- mini surround
-require("mini.surround").setup({ })
+require("mini.surround").setup({})
 
 -- mini notify
 require("mini.notify").setup({
@@ -82,7 +82,7 @@ MiniSnippets.setup({
         MiniSnippets.gen_loader.from_lang(), -- load friendly snippets automatically
     },
 })
-MiniSnippets.start_lsp_server( { match = false } ) -- start the snippet
+MiniSnippets.start_lsp_server({ match = false }) -- start the snippet
 
 -- treesitter
 require("treesitter")
